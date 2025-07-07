@@ -175,6 +175,12 @@
     margin-left: 2vw;
     padding-left: 10px;
   }
+   .left_MAIN {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
 }
 
 @media (max-width: 600px) {
