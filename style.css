@@ -14,6 +14,7 @@
   align-items: center;
   background-color: #333;
   border-radius: 10px;
+  box-shadow: 0px 0px 15px violet;
 }
 
 .header-bar > div {
@@ -41,20 +42,66 @@
     
 }
 
-
-.left_MAIN {
-    width: 25vw;
-    height: 45vw;
-    text-align: left;
-    padding: 10px;
-        background: linear-gradient(to right, rgb(36, 39, 65), #333,rgb(36, 39, 65));
-    
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #5b4caf;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  
+  border-radius: 10px;
 
 }
 
+/* Container needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: solid 2px red;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: gray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #8769fe;
+  box-shadow: 0px 0px 15px violet;
+}
+
+
+
 
 .main {
-    width: 75vw;
+    width: 100vw;
     overflow: scroll;
     height: 45vw;
     background: linear-gradient(to right, rgb(36, 39, 65), #333,rgb(36, 39, 65));
@@ -133,8 +180,10 @@
 }
 
 .flipper{
+  width: 510px;
     margin-top: 2vh;
-    margin-left: 45vh;
+    margin-left: 33%;
+  
 }
 
  .element-container{
@@ -156,56 +205,26 @@
     text-align: center;
 }
 
-
-@media (max-width: 900px) {
-  .main, .left_MAIN {
-    width: 100vw;
-    height: auto;
-    padding: 5px;
-  }
-  .flip-box {
-    width: 90vw;
-    height: 200px;
-  }
-  .flipper {
-    margin-left: 0;
-    margin-top: 2vh;
-  }
-  .element-container, .message {
-    margin-left: 2vw;
-    padding-left: 10px;
-  }
-   .left_MAIN {
-    order: 1;
-  }
-  .main {
-    order: 2;
-  }
+.learn_button{
+  text-align: center;
+  
+  background-color: rgb(42, 42, 98);
+  height: 30px;
+  width: 150px;
+  border-radius: 50px;
+  border-color: linear-gradient(to right, rgb(36, 39, 65), #333,rgb(36, 39, 65));
+ transition: 0.3s;
+  
+}
+.learn_button:hover{
+ background-color: blue;
+ border-color: red;
+ font-style: italic;
 }
 
-@media (max-width: 600px) {
-  .header-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0;
-  }
-  .flip-box {
-    width: 98vw;
-    height: 150px;
-  }
-  .LOGO {
-    font-size: 18px;
-  }
-  .tagline {
-    font-size: 14px;
-  }
-  .learn_button {
-    width: 100px;
-    font-size: 12px;
-  }
-  .element-container, .message {
-    margin-left: 1vw;
-    padding-left: 5px;
-  }
+
+.notice{
+  background-color: gray;
+  box-shadow: 0px 0px 15px violet;
 }
 
