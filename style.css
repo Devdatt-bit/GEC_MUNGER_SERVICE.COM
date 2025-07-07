@@ -181,7 +181,7 @@
 }
 
 .flipper{
-  width: 510px;
+    width: 510px;
     margin-top: 2vh;
     margin-left: 33%;
   
@@ -238,9 +238,10 @@
   }
 
   .flipper{
-    
-    margin-top: 2vh;
-    margin-left: 10%;
+    width: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+
   
 }
 .header-bar{
@@ -254,6 +255,21 @@
   margin-bottom: 30px;
   border-radius: 10px;
 }
+
+.flip-box-front .flip-box-back{
+
+
+}
+.flip-box {
+  background-color: transparent;
+  width: 350px;
+  height: 250px;
+  perspective: 600px; 
+
+
+}
+
+
   
 }
 
