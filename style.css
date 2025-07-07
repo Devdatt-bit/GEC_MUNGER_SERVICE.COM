@@ -272,6 +272,9 @@
 
 
 }
+  *{
+        background: linear-gradient(to right, rgb(36, 39, 65), #333,rgb(36, 39, 65));
+  }
 
 
   
