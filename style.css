@@ -156,31 +156,50 @@
     text-align: center;
 }
 
-@media (max-width: 700px) {
-  .left_MAIN,
-  .main {
+
+@media (max-width: 900px) {
+  .main, .left_MAIN {
     width: 100vw;
     height: auto;
+    padding: 5px;
   }
-
-  .layout-container {
-    flex-direction: column;
+  .flip-box {
+    width: 90vw;
+    height: 200px;
   }
-
   .flipper {
     margin-left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    margin-top: 2vh;
   }
-
-  .flip-box {
-    width: 90%;
-    height: auto;
-  }
-
-  .element-container,
-  .message {
-    margin-left: 5vw;
+  .element-container, .message {
+    margin-left: 2vw;
+    padding-left: 10px;
   }
 }
+
+@media (max-width: 600px) {
+  .header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  .flip-box {
+    width: 98vw;
+    height: 150px;
+  }
+  .LOGO {
+    font-size: 18px;
+  }
+  .tagline {
+    font-size: 14px;
+  }
+  .learn_button {
+    width: 100px;
+    font-size: 12px;
+  }
+  .element-container, .message {
+    margin-left: 1vw;
+    padding-left: 5px;
+  }
+}
+
